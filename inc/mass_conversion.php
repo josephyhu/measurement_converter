@@ -60,7 +60,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e23;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e24;
+				$mass = $input_measurement * $yotta;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e25;
@@ -136,7 +136,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e20;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e21;
+				$mass = $input_measurement * $zetta;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e22;
@@ -212,7 +212,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e17;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e18;
+				$mass = $input_measurement * $exa;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e19;
@@ -288,7 +288,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e14;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e15;
+				$mass = $input_measurement * $peta;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e16;
@@ -364,7 +364,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e11;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e12;
+				$mass = $input_measurement * $tera;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e13;
@@ -440,7 +440,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 1e8;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e9;
+				$mass = $input_measurement * $giga;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e10;
@@ -516,7 +516,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 100000;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1e6;
+				$mass = $input_measurement * $mega;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1e7;
@@ -592,7 +592,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 100;
 				break;
 			case 'g':
-				$mass = $input_measurement * 1000;
+				$mass = $input_measurement * $kilo;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 10000;
@@ -668,7 +668,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * 10;
 				break;
 			case 'g':
-				$mass = $input_measurement * 100;
+				$mass = $input_measurement * $hecto;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 1000;
@@ -744,7 +744,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 10;
 				break;
 			case 'g':
-				$mass = $input_measurement * 10;
+				$mass = $input_measurement * $deca;
 				break;
 			case 'dg':
 				$mass = $input_measurement * 100;
@@ -823,7 +823,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 100;
 				break;
 			case 'g':
-				$mass = $input_measurement / 10;
+				$mass = $input_measurement * $deci;
 				break;
 			case 'cg':
 				$mass = $input_measurement * 10;
@@ -899,7 +899,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1000;
 				break;
 			case 'g':
-				$mass = $input_measurement / 100;
+				$mass = $input_measurement * $centi;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 10;
@@ -975,7 +975,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 10000;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1000;
+				$mass = $input_measurement * $milli;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 100;
@@ -1051,7 +1051,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e7;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e6;
+				$mass = $input_measurement * $micro;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 100000;
@@ -1127,7 +1127,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e10;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e9;
+				$mass = $input_measurement * $nano;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e8;
@@ -1203,7 +1203,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e13;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e12;
+				$mass = $input_measurement * $pico;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e11;
@@ -1279,7 +1279,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e16;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e15;
+				$mass = $input_measurement * $femto;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e14;
@@ -1355,7 +1355,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e19;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e18;
+				$mass = $input_measurement * $atto;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e17;
@@ -1431,7 +1431,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e22;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e21;
+				$mass = $input_measurement * $zepto;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e20;
@@ -1507,7 +1507,7 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / 1e25;
 				break;
 			case 'g':
-				$mass = $input_measurement / 1e24;
+				$mass = $input_measurement * $yocto;
 				break;
 			case 'dg':
 				$mass = $input_measurement / 1e23;
@@ -1635,25 +1635,25 @@ switch ( $input_unit ) {
 				$mass = $input_measurement * $lb_to_oz;
 				break;
 			case 'Yg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e26;
+				$mass = $input_measurement * $lb_to_kg / 1e21;
 				break;
 			case 'Zg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e23;
+				$mass = $input_measurement * $lb_to_kg / 1e18;
 				break;
 			case 'Eg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e20;
+				$mass = $input_measurement * $lb_to_kg / 1e15;
 				break;
 			case 'Pg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e17;
+				$mass = $input_measurement * $lb_to_kg / 1e12;
 				break;
 			case 'Tg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e14;
+				$mass = $input_measurement * $lb_to_kg / 1e9;
 				break;
 			case 'Gg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e11;
+				$mass = $input_measurement * $lb_to_kg / 1e6;
 				break;
 			case 'Mg':
-				$mass = $input_measurement * $lb_to_kg * $kilo / 1e8;
+				$mass = $input_measurement * $lb_to_kg / 1000;
 				break;
 			case 'kg':
 				$mass = $input_measurement * $lb_to_kg;
@@ -1711,25 +1711,25 @@ switch ( $input_unit ) {
 				$mass = $input_measurement / $lb_to_oz;
 				break;
 			case 'Yg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e26;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e21;
 				break;
 			case 'Zg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e23;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e18;
 				break;
 			case 'Eg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e20;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e15;
 				break;
 			case 'Pg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e17;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e12;
 				break;
 			case 'Tg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e14;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e9;
 				break;
 			case 'Gg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e11;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1e6;
 				break;
 			case 'Mg':
-				$mass = $input_measurement / $lb_to_oz * $lb_to_kg * $kilo / 1e8;
+				$mass = $input_measurement / $lb_to_oz * $lb_to_kg / 1000;
 				break;
 			case 'kg':
 				$mass = $input_measurement / $lb_to_oz * $lb_to_kg;
