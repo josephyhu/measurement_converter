@@ -2,7 +2,7 @@
 $pageTitle = "Length";
 
 require_once('inc/header.php');
-require_once('inc/conversion.php');
+require_once('inc/length_conversion.php');
 ?>
 
 <form action="length.php" method="get">
@@ -24,7 +24,7 @@ require_once('inc/conversion.php');
 			<option value="dm">decimeter</option>
 			<option value="cm">centimeter</option>
 			<option value="mm">millimeter</option>
-			<option value="um">micrometer</option>
+			<option value="μm">micrometer</option>
 			<option value="nm">nanommeter</option>
 			<option value="pm">picometer</option>
 			<option value="fm">femtometer</option>
@@ -40,8 +40,8 @@ require_once('inc/conversion.php');
 		</optgroup>
 	</select>
 	<br>
-	<label for="convert-from">Convert from:<span style="color:red;">*</span></label>
-	<input type="text" id="convert-from" name="convert-from" placeholder="Please enter the measurement." required>
+	<label for="measurement">Length:<span style="color:red;">*</span></label>
+	<input type="text" id="measurement" name="measurement" placeholder="Please enter the length." required>
 	<br>
 	<label for="unit-to-convert-to">Please select the unit to convert to:<span style="color:red;">*</span></label>
 	<br>

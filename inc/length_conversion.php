@@ -2,7 +2,7 @@
 #Units and Measurement
 $input_unit        = $_GET['unit-to-convert-from'];
 $output_unit       = $_GET['unit-to-convert-to'];
-$input_measurement = $_GET['convert-from'];
+$input_measurement = $_GET['measurement'];
 
 #SI Prefixes
 $yotta = 1e24;
@@ -26,7 +26,6 @@ $atto  = 1e-18;
 $zepto = 1e-21;
 $yocto = 1e-24;
 
-#Length
 $in_to_cm = 2.54;
 $ft_to_in = 12;
 $yd_to_ft = 3;
@@ -1659,6 +1658,9 @@ switch ( $input_unit ) {
 			case 'dm':
 				$length = $input_measurement * $mi_to_yd * $yd_to_ft * $ft_to_in * $in_to_cm / 10;
 				break;
+			case 'cm':
+				$length = $input_measurement * $mi_to_yd * $yd_to_ft * $ft_to_in * $in_to_cm;
+				break;
 			case 'mm':
 				$length = $input_measurement * $mi_to_yd * $yd_to_ft * $ft_to_in * $in_to_cm * 10;
 				break;
@@ -1734,6 +1736,9 @@ switch ( $input_unit ) {
 				break;
 			case 'dm':
 				$length = $input_measurement * $yd_to_ft * $ft_to_in * $in_to_cm / 10;
+				break;
+			case 'cm':
+				$length = $input_measurement * $yd_to_ft * $ft_to_in * $in_to_cm;
 				break;
 			case 'mm':
 				$length = $input_measurement * $yd_to_ft * $ft_to_in * $in_to_cm * 10;
@@ -1811,6 +1816,9 @@ switch ( $input_unit ) {
 			case 'dm':
 				$length = $input_measurement * $ft_to_in * $in_to_cm / 10;
 				break;
+			case 'cm':
+				$length = $input_measurement * $ft_to_in * $in_to_cm;
+				break;
 			case 'mm':
 				$length = $input_measurement * $ft_to_in * $in_to_cm * 10;
 				break;
@@ -1886,6 +1894,9 @@ switch ( $input_unit ) {
 				break;
 			case 'dm':
 				$length = $input_measurement * $in_to_cm / 10;
+				break;
+			case 'cm':
+				$length = $input_measurement * $in_to_cm;
 				break;
 			case 'mm':
 				$length = $input_measurement * $in_to_cm * 10;
