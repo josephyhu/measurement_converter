@@ -1,28 +1,28 @@
 <?php
 #Units and Measurement
-$input_unit = $_GET['unit-to-convert-from'];
-$output_unit = $_GET['unit-to-convert-to'];
+$input_unit        = $_GET['unit-to-convert-from'];
+$output_unit       = $_GET['unit-to-convert-to'];
 $input_measurement = $_GET['convert-from'];
 
 #SI Prefixes
 $yotta = 1e24;
 $zetta = 1e21;
-$exa = 1e18;
-$peta = 1e15;
-$tera = 1e12;
-$giga = 1e9;
-$mega = 1e6;
-$kilo = 1000;
+$exa   = 1e18;
+$peta  = 1e15;
+$tera  = 1e12;
+$giga  = 1e9;
+$mega  = 1e6;
+$kilo  = 1000;
 $hecto = 100;
-$deca = 10;
-$deci = .1;
+$deca  = 10;
+$deci  = .1;
 $centi = .01;
 $milli = .001;
 $micro = 1e-6;
-$nano = 1e-9;
-$pico = 1e-12;
+$nano  = 1e-9;
+$pico  = 1e-12;
 $femto = 1e-15;
-$atto = 1e-18;
+$atto  = 1e-18;
 $zepto = 1e-21;
 $yocto = 1e-24;
 
@@ -31,7 +31,7 @@ $in_to_cm = 2.54;
 $ft_to_in = 12;
 $yd_to_ft = 3;
 $mi_to_yd = 1760;
-switch ($input_unit) {
+switch ( $input_unit ) {
 	case 'Ym':
 		switch ( $output_unit ) {
 			case 'Zm':
@@ -1534,7 +1534,7 @@ switch ($input_unit) {
 		}
 		break;
 	case 'ym':
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'Ym':
 				$length = $input_measurement / 1e48;
 				break;
@@ -1613,7 +1613,7 @@ switch ($input_unit) {
 		}
 		break;
 	case 'mi':
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'yd':
 				$length = $input_measurement * $mi_to_yd;
 				break;
@@ -1689,7 +1689,7 @@ switch ($input_unit) {
 		}
 		break;
 	case 'yd':
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'mi':
 				$length = $input_measurement / $mi_to_yd;
 				break;
@@ -1765,7 +1765,7 @@ switch ($input_unit) {
 		}
 		break;
 	case 'ft':
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'mi':
 				$length = $input_measurement / $yd_to_ft / $mi_to_yd;
 				break;
@@ -1841,7 +1841,7 @@ switch ($input_unit) {
 		}
 		break;
 	case 'in':
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'mi':
 				$length = $input_measurement / $ft_to_in / $yd_to_ft / $mi_to_yd;
 				break;
@@ -1917,7 +1917,7 @@ switch ($input_unit) {
 		}
 		break;
 	default:
-		switch ($output_unit) {
+		switch ( $output_unit ) {
 			case 'Ym':
 				$length = $input_measurement / $yotta;
 				break;
