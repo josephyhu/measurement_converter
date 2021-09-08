@@ -1,0 +1,31 @@
+body {
+    background-color: midnightblue;
+    color: skyblue;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    margin: 1px;
+    background-color: skyblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    opacity: 50%;
+}
+
+a:visited {
+    color: darkcyan;
+}
