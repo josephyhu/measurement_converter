@@ -80,8 +80,8 @@ require_once('inc/conversion.php');
 	<input type="submit" value="Convert">
 </form>
 <?php
-echo "<p>You've entered: $input_measurement " . "$input_unit.</p>";
-echo "<p>The converted length is: $length " . "$output_unit.</p>";
+echo "<p>You've entered: $input_measurement $input_unit.</p>";
+echo "<p>The converted length is: $length $output_unit.</p>";
 ?>
 
 <?php require_once('inc/footer.php'); ?>
