@@ -25,7 +25,7 @@ require_once('inc/mass_conversion.php');
 				<option value="cg">centigram</option>
 				<option value="mg">milligram</option>
 				<option value="μg">microgram</option>
-				<option value="ng">nanomgram</option>
+				<option value="ng">nanogram</option>
 				<option value="pg">picogram</option>
 				<option value="fg">femtogram</option>
 				<option value="ag">attogram</option>
@@ -61,7 +61,7 @@ require_once('inc/mass_conversion.php');
 				<option value="cg">centigram</option>
 				<option value="mg">milligram</option>
 				<option value="μg">microgram</option>
-				<option value="ng">nanomgram</option>
+				<option value="ng">nanogram</option>
 				<option value="pg">picogram</option>
 				<option value="fg">femtogram</option>
 				<option value="ag">attogram</option>

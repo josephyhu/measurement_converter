@@ -25,7 +25,7 @@ require_once('inc/length_conversion.php');
 			<option value="cm">centimeter</option>
 			<option value="mm">millimeter</option>
 			<option value="μm">micrometer</option>
-			<option value="nm">nanommeter</option>
+			<option value="nm">nanometer</option>
 			<option value="pm">picometer</option>
 			<option value="fm">femtometer</option>
 			<option value="am">attometer</option>
@@ -62,7 +62,7 @@ require_once('inc/length_conversion.php');
 			<option value="cm">centimeter</option>
 			<option value="mm">millimeter</option>
 			<option value="μm">micrometer</option>
-			<option value="nm">nanommeter</option>
+			<option value="nm">nanometer</option>
 			<option value="pm">picometer</option>
 			<option value="fm">femtometer</option>
 			<option value="am">attometer</option>
