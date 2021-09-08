@@ -61,7 +61,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e23;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e24;
+				$length = $input_measurement * $yotta;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e25;
@@ -140,7 +140,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e20;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e21;
+				$length = $input_measurement * $zetta;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e22;
@@ -219,7 +219,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e17;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e18;
+				$length = $input_measurement * $exa;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e19;
@@ -298,7 +298,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e14;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e15;
+				$length = $input_measurement * $peta;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e16;
@@ -377,7 +377,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e11;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e12;
+				$length = $input_measurement * $tera;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e13;
@@ -456,7 +456,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 1e8;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e9;
+				$length = $input_measurement * $giga;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e10;
@@ -535,7 +535,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 100000;
 				break;
 			case 'm':
-				$length = $input_measurement * 1e6;
+				$length = $input_measurement * $mega;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1e7;
@@ -614,7 +614,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 100;
 				break;
 			case 'm':
-				$length = $input_measurement * 1000;
+				$length = $input_measurement * $kilo;
 				break;
 			case 'dm':
 				$length = $input_measurement * 10000;
@@ -693,7 +693,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * 10;
 				break;
 			case 'm':
-				$length = $input_measurement * 100;
+				$length = $input_measurement * $hecto;
 				break;
 			case 'dm':
 				$length = $input_measurement * 1000;
@@ -772,7 +772,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 10;
 				break;
 			case 'm':
-				$length = $input_measurement * 10;
+				$length = $input_measurement * $deca;
 				break;
 			case 'dm':
 				$length = $input_measurement * 100;
@@ -854,7 +854,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 100;
 				break;
 			case 'm':
-				$length = $input_measurement / 10;
+				$length = $input_measurement * $deci;
 				break;
 			case 'cm':
 				$length = $input_measurement * 10;
@@ -933,7 +933,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1000;
 				break;
 			case 'm':
-				$length = $input_measurement / 100;
+				$length = $input_measurement * $centi;
 				break;
 			case 'dm':
 				$length = $input_measurement / 10;
@@ -1012,7 +1012,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 10000;
 				break;
 			case 'm':
-				$length = $input_measurement / 1000;
+				$length = $input_measurement * $milli;
 				break;
 			case 'dm':
 				$length = $input_measurement / 100;
@@ -1091,7 +1091,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e7;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e6;
+				$length = $input_measurement * $micro;
 				break;
 			case 'dm':
 				$length = $input_measurement / 100000;
@@ -1170,7 +1170,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e10;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e9;
+				$length = $input_measurement * $nano;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e8;
@@ -1249,7 +1249,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e13;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e12;
+				$length = $input_measurement * $pico;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e11;
@@ -1328,7 +1328,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e16;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e15;
+				$length = $input_measurement * $femto;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e14;
@@ -1407,7 +1407,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e19;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e18;
+				$length = $input_measurement * $atto;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e17;
@@ -1486,7 +1486,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e22;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e21;
+				$length = $input_measurement * $zepto;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e20;
@@ -1565,7 +1565,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement / 1e25;
 				break;
 			case 'm':
-				$length = $input_measurement / 1e24;
+				$length = $input_measurement * $yocto;
 				break;
 			case 'dm':
 				$length = $input_measurement / 1e23;
@@ -1811,7 +1811,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * $ft_to_in * $in_to_cm / 1000;
 				break;
 			case 'm':
-				$length = $input_measurement * $ft_to_in * $in_to_cm / 100;
+				$length = $input_measurement * $ft_to_in * $in_to_cm * $centi;
 				break;
 			case 'dm':
 				$length = $input_measurement * $ft_to_in * $in_to_cm / 10;
@@ -1890,7 +1890,7 @@ switch ( $input_unit ) {
 				$length = $input_measurement * $in_to_cm / 1000;
 				break;
 			case 'm':
-				$length = $input_measurement * $in_to_cm / 100;
+				$length = $input_measurement * $in_to_cm * $centi;
 				break;
 			case 'dm':
 				$length = $input_measurement * $in_to_cm / 10;
